@@ -18,3 +18,14 @@ String[] getColName = new String[5];
 	System.out.println(getColName[i-1]);
 	}
 
+	if (isNull2(reg_form.name))
+		return false;
+	if (isNull2(reg_form.id))
+		return false;
+	if (isNull2(reg_form.pw))
+		return false;
+	if (isNull2(reg_form.pw2)) // 만약에 pw2가 없으면 밑에꺼 처리 안함.
+		return false;
+	if (isNull2(reg_form.tel)){
+		return false;
+	}
