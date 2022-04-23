@@ -9,3 +9,12 @@ try {
 } catch (Exception e) {
 	System.out.println("오류");
 }
+
+
+// String[]
+String[] getColName = new String[5];
+	for (int i = 1; i <= getCol; ++i) {
+		getColName[i-1] = rsmd.getColumnName(i); // 이거! 
+	System.out.println(getColName[i-1]);
+	}
+
