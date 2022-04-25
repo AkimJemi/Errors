@@ -29,3 +29,10 @@ String[] getColName = new String[5];
 	if (isNull2(reg_form.tel)){
 		return false;
 	}
+
+				   
+
+
+<jsp:useBean id="board" class="round23.dto.BoardDTO " scope="request"> // 이거 띄어쓰기!! DAO-"
+	<jsp:setProperty name="board" property="*" />
+</jsp:useBean>
