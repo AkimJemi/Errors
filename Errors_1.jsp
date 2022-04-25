@@ -36,3 +36,11 @@ String[] getColName = new String[5];
 <jsp:useBean id="board" class="round23.dto.BoardDTO " scope="request"> // 이거 띄어쓰기!! DAO-"
 	<jsp:setProperty name="board" property="*" />
 </jsp:useBean>
+
+
+function pageCountNum(nums) {
+		alert(nums);
+		location.href = "Round21_02_Page_Main.jsp?page_countNum=" + nums;
+	}
+<input type="button" value="1" onclick="pageCountNum(1)" /> // 어딘가 이름이 똑같은게 있으면 실행이 안된다!
+<form name="pageCountNum"> 
