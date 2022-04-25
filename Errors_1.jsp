@@ -1,3 +1,4 @@
+class{
 try {
 	String query = "select count(*) from user_tb";
 	stmt = conn.prepareStatement(query);
@@ -30,7 +31,7 @@ String[] getColName = new String[5];
 		return false;
 	}
 
-				   
+				   }
 
 
 <jsp:useBean id="board" class="round23.dto.BoardDTO " scope="request"> // 이거 띄어쓰기!! DAO-"
