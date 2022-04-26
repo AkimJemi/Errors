@@ -44,3 +44,17 @@ function pageCountNum(nums) {
 	}
 <input type="button" value="1" onclick="pageCountNum(1)" /> // 어딘가 이름이 똑같은게 있으면 실행이 안된다!
 <form name="pageCountNum"> 
+
+	
+	
+	//
+	public void setIn(Reader in) { //[5] Setin 대소문자 구분!
+	this.in = in;
+	viewData();
+	}
+	
+	<c:import url="/Round25_Page_ELView.jsp" context="/JSPProject" varReader="in">
+        <jsp:useBean id="dataout" class="round25.out.DataOut">
+        <c:set target="${ dataout }" property="in" value="${ in }"/>  //[5] 여기서 property 인식을 못한다!
+        </jsp:useBean>
+        </c:import>
